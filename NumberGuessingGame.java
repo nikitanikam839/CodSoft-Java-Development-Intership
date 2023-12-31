@@ -1,5 +1,3 @@
-package com.Codsoft.Number_Game;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,7 +14,6 @@ public class NumberGuessingGame {
 		do {
 
 			int NumberGuess = rand.nextInt(100) + 1;
-			System.out.println("Random number is: " + NumberGuess);
 
 			System.out.println("Guess a random number between 1 to 100: ");
 
@@ -43,14 +40,13 @@ public class NumberGuessingGame {
 				break;
 			}
 
-			sc.close();
 			System.out.println("\nDo you want to play again?(Yes/No): ");
 
 		} while (sc.nextLine().equalsIgnoreCase("Yes"));
+		sc.close();
 
 		System.out.println("your final score is: " + score);
 		System.out.println("Thanks for playing");
-
 	}
 
 }
